@@ -5,13 +5,29 @@ body {
     background-color: #14526b; /* color sa tunga */
 }
 
-.sidebar {
+/*.sidebar {
     width: 200px;
     height: 100vh;
-    background-color: #487083; /* color sa side bar */
+    background-color: #487083; /* color sa side bar *
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
+    gap: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+}*/
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    width: 200px;
+    /*height: 100vh; */
+    min-height: 100vh;
+    background-color: #487083; /* color sa side bar */
     padding-top: 20px;
     gap: 15px;
     position: fixed;
@@ -60,7 +76,7 @@ body {
 }
 
 /* Button styles remain the same */
-.btn-17 {
+/*.btn-17 {
     border-radius: 99rem;
     border-width: 2px;
     padding: 0.8rem 2rem;
@@ -70,6 +86,20 @@ body {
     cursor: pointer;
     font-weight: 900;
     text-transform: uppercase;
+}*/
+.btn-17 {
+    display: block; /* Makes it a block element for easier centering */
+    width: fit-content; /* Ensures the button only takes up necessary space */
+    /*margin: auto;  Centers the button horizontally */
+    border-radius: 99rem;
+    border-width: 2px;
+    padding: 0.8rem 2rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .btn-17,
