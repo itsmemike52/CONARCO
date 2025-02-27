@@ -2,7 +2,7 @@ body {
     display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #14526b; /* color sa tunga */
+    background-color: #3d4142; /* color sa tunga */
 }
 
 /*.sidebar {
@@ -23,18 +23,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
-    width: 200px;
-    /*height: 100vh; */
+    justify-content: center;  /*Centers content vertically */
+   /* width: 20vh;*/
+    height: 100vh; 
     min-height: 100vh;
-    background-color: #487083; /* color sa side bar */
+    background-color: #191c1d; /* color sa side bar*/
     padding-top: 20px;
     gap: 15px;
     position: fixed;
     left: 0;
     top: 0;
     transition: transform 0.3s ease-in-out;
-}
+} 
 
 /* Hide sidebar on small screens */
 @media (max-width: 768px) {
@@ -46,6 +46,7 @@ body {
         transform: translateX(0);
     }
 }
+
 
 /* color sa menu lines */
 .menu-toggle {
