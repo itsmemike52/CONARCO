@@ -13,6 +13,7 @@ function updateMenuVisibility() {
 
 // Toggle sidebar and hide menu button when opened
 menuToggle.addEventListener("click", function () {
+    document.querySelector(".content").classList.toggle("shifted");
     sidebar.classList.toggle("show");
     menuToggle.style.display = "none";
 });
