@@ -160,20 +160,20 @@ body {
 
 
 
-
-
-
-
 @media (max-width: 768px) {
     .content {
-        margin-left: 0; /* Move content to the left */
-        width: 100%; /* Take full width */
+        margin-left: 0;
+        width: 100%;
+        padding-top: 60px; /* Push content down to avoid overlap */
     }
 
     .sidebar.show + .content {
-        margin-left: 200px; /* Shift right when sidebar is open */
-        width: calc(100% - 200px); /* Prevent squeezing */
+        margin-left: 200px;
+        width: calc(100% - 200px);
     }
 }
+
+
+
 
 
