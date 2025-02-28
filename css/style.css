@@ -5,20 +5,6 @@ body {
     background-color: #3d4142; /* color sa tunga */
 }
 
-/*.sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #487083; /* color sa side bar *
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    gap: 15px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    transition: transform 0.3s ease-in-out;
-}*/
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -76,21 +62,11 @@ body {
     padding: 20px;
 }
 
-/* Button styles remain the same */
-/*.btn-17 {
-    border-radius: 99rem;
-    border-width: 2px;
-    padding: 0.8rem 2rem;
-    z-index: 0;
-    background-color: #000;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 900;
-    text-transform: uppercase;
-}*/
+
+/*tanan nga button */
 .btn-17 {
     display: block; /* Makes it a block element for easier centering */
-    width: fit-content; /* Ensures the button only takes up necessary space */
+    width: 180px; /* Ensures the button only takes up necessary space */
     /*margin: auto;  Centers the button horizontally */
     border-radius: 99rem;
     border-width: 2px;
@@ -165,10 +141,11 @@ body {
         margin-left: 0;
         width: 100%;
         padding-top: 60px; /* Push content down to avoid overlap */
+        transition: margin-left 0.3s ease-in-out;
     }
 
     .sidebar.show + .content {
-        margin-left: 200px;
+        margin-left: 170px;
         width: calc(100% - 200px);
     }
 }
